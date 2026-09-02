@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+
+        stage('Run Python') {
+            steps {
+                bat 'python calculator.py'
+            }
+        }
+    }
+}
