@@ -8,10 +8,6 @@ pipeline {
             }
         }
 
-        stage('Run Python') {
-            steps {
-                bat 'python calculator.py'
-            }
         }
     }
 }
